@@ -1,20 +1,32 @@
-# CookBook
+# CookBook — Reseptlər
 
-Azərbaycan dilində resept kitabı. Layihə Next.js App Router ilə qurulub; bu mərhələdə reseptlər sabit məlumat faylından oxunur.
+CookBook reseptlərə baxmaq, yemək axtarmaq və hazırlanma qaydalarını izləmək üçün hazırlanmış Next.js layihəsidir. Sayt resept şəkillərini göstərir və TheMealDB API vasitəsilə internetdən resept axtarır.
 
-## Başlatmaq
+## İmkanlar
 
-```bash
-npm install
-npm run dev
-```
+- Reseptləri kartlar şəklində göstərir.
+- Resept adına görə axtarış etməyə imkan verir.
+- Resept şəkillərini və hazırlanma qaydasını göstərir.
+- Porsiya sayını dəyişəndə ərzaq miqdarlarını uyğunlaşdırır.
+- Hazırlanma addımlarını qeyd etmək üçün checklist təqdim edir.
+- Səhifə yüklənərkən yüklənmə görünüşü göstərir.
+- Xəta zamanı yenidən cəhd etməyə imkan verir.
+- Mövcud olmayan səhifələr üçün 404 səhifəsi göstərir.
 
-Sonra `http://localhost:3000` ünvanını açın.
+## İstifadə olunan texnologiyalar
 
-## Səhifələr
+- Next.js
+- React
+- JavaScript
+- TheMealDB API
 
-- `/` — ana səhifə və kateqoriyalar
-- `/reseptler` — resept siyahısı
-- `/reseptler/[id]` — resept təfərrüatı
-- `/haqqinda` — layihə haqqında
-"# CookBook-ikinci-hisse" 
+## Quraşdırma
+
+Kompüterdə Node.js və npm quraşdırılmış olmalıdır.
+
+1. Layihə qovluğunu VS Code-da açın. `package.json` faylı həmin qovluqda olmalıdır.
+2. Terminalı açın: **Terminal → New Terminal**.
+3. Paketləri quraşdırın:
+
+   ```bash
+   npm install
